@@ -1,0 +1,65 @@
+Progress - Protecting Mount Everest (Tower defense)
+
+*Interim report 1 (12.3)*
+
+All the classes specified in the project plan have been added but only a few of them contain implemented
+functions. The View (GUI) class has been updated with simple drawing functions for the first level map
+and main menu (methods draw and drawLevel), and the tracking of mouse activity has also been updated
+(method mouseClicked). Class Level has the mock version of the function addMachine implemented that adds
+new snowball machines in the level. 
+
+As the few methods implemented are in their early development phase and focus only on drawing the GUI,
+none of them have been tested yet. Currently, these methods can only be tested by launching the game and
+taking note of where the images (background and buttons) fall on the screen. Tests will follow when
+more functionality is added into the game.
+
+No truly difficult errors have appeared with the project this far, as most of the error messages had
+something to do with typos in the code and could be fixed easily.
+
+The workload for the project has been about 15 hours this far.
+
+The schedule presented in the project plan has been kept with mostly but building the classes View and
+Level has taken more time than expected. Thus, the project is slightly behind schedule.
+
+*Interim report 2 (25.3)*
+
+A majority of the classes have been updated at this point to contain essential methods for gameplay.
+Defending equipment can now be placed with setter functions in the View class. Both drawing and
+mouseClicked methods have been updated to allow the player to use buttons and choose options during
+gameplay. A new class, DataProcessor, has been added and updated with methods that enable data file
+reading and modification of level and defending equipment attributes.
+
+JUnit tests have been added (to package tests) for methods loadLevel, addMachine and loadMachine.
+Tests that load level files ensure the correct handling of faulty files and check that a valid level
+file produces a correctly formed Level instance. In addition, tests for addMachine make sure that
+machines will only be added onto a free defending spot, and the test for loadMachine checks that loading
+a valid machine file produces the correct machine information.
+
+No difficult errors have occurred this far in the project.
+
+The workload for the project has been around 30 hours.
+
+The project is behind schedule, as methods for enemies and waves have not been implemented according
+to schedule.
+
+*Interim report 3 (8.4)*
+
+All classes have been updated at this point but some methods still need polishing. Enemy, Sherpa and
+Wave classes now contain methods that are truly important for gameplay. The new additions to the classes are
+variables for the enemy waves and methods for both enemies and sherpas that enable movement and finding
+targets. In addition, enemies and sherpas can now attack each other and enemies manifest on the
+screen in waves. The drawLevel method now draws enemies and sherpas in action by calling the action method
+constantly. All loading methods for different files now have default values set up for the different
+instances. This enables the processing of slightly faulty files without big errors.
+
+JUnit tests have been added for methods loadTent and loadEnemy. They test the reading of valid files and
+ensure the methods produce correct instances of tents and enemies. Tests loadMachine and loadLevel have
+also been updated, as the corresponding methods now offer default values when the values given in the
+files are not valid.
+
+No truly challenging errors have occurred in the project this far.
+
+The workload for the project has been about 50 hours.
+
+The project is behind schedule at the moment, as the final game methods are not ready and the code of the
+game has to be cleaned up more.

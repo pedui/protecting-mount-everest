@@ -1,0 +1,21 @@
+Hello there!
+Here are some simple rules for making your own data files for the game:
+
+1. As the game cannot handle thousands of enemies and sherpas swarming the level, the amount of characters
+   per tent and enemy wave has been limited to 20. These waves are limited to 1 - 10 per level.
+
+3. Always put in at least one defense spot and over 10 path coordinates in a Level file. The game will only
+   work correctly when it has a path for the enemies, and the one defense spot is for the player's benefit.
+   
+4. The health of a character cannot be 0.0 at the start of a level.
+
+5. The files inside the data folder have to be named correctly for the data reader to identify them.
+	# Level files need to contain a space and the level number after the name, f.ex. "Level 1" or "Level 2".
+	# Enemy files have to contain a space and the enemy type number after the name, f.ex. "Enemy 1".
+	# Machine and Tent files are simply named "Tent" and "Machine". Try to have only one of each inside the
+	folder to avoid any confusion with the data reader.
+
+6. Lastly, remember to save the data file before launching the game!
+
+Thank you for your patience! Feel free to check out the data folder in the project root.
+Hope you enjoy the game!
